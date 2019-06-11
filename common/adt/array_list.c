@@ -163,7 +163,7 @@ int adt_array_list_get_index(ArrayList *list, ArrayListItemDataPtr data){
 }
 
 int adt_array_list_get_size(const ArrayList* list){
-  return list->size;
+  return list==NULL?0:list->size;
 }
 
 int adt_array_list_get_capacity(const ArrayList* list){

@@ -1,1 +1,12 @@
-add_library(cpma  main.c)
+add_library(cpma
+  cpma_main.c
+  pointers/max_min.c
+  pointers/project1.c
+  pointers/project2.c
+  pointers/project3.c
+  pointers/project4.c
+  pointers_and_arrays/project12-1.c
+  pointers_and_arrays/project12-2.c
+  pointers_and_arrays/project12-5.c
+  pointers_and_arrays/project12-6.c
+)

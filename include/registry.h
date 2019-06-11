@@ -3,13 +3,18 @@
 
 #include "adt/array_list.h"
 
+#define TYPE_PARENT 0
+#define TYPE_CHILD 1
+
 struct _Regestry;
 
 typedef struct _Registry Registry;
 
+typedef int (*RegistryCallable)(int, char**);
+
 Registry* registry_new();
 
-void registry_add(Registry* parent, const char* name, int type);
+Registry* registry_add(Registry* parent, const char* name, RegistryCallable, int type);
 
 ArrayList *registry_get_children(Registry* parent);
 
@@ -17,4 +22,5 @@ const char* registry_get_name(Registry *registry);
 
 int registry_get_type(Registry *registry);
 
+RegistryCallable registry_get_callable(Registry* registry);
 #endif
