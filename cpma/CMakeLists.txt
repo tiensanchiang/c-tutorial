@@ -9,4 +9,10 @@ add_library(cpma
   pointers_and_arrays/project12-2.c
   pointers_and_arrays/project12-5.c
   pointers_and_arrays/project12-6.c
+  strings/remainder.c
+  strings/project13-1.c
+  strings/project13-2.c
+  strings/project13-4.c
+  strings/project13-5.c
+  
 )
