@@ -16,5 +16,9 @@ add_library(cpma
   strings/project13-4.c
   strings/project13-5.c
   strings/project13-6.c
+  large_program/justify.c
+  large_program/word.c
+  large_program/line.c
+  )
 
-)
+#add_executable(justify large_program/justify.c large_program/word.c large_program/line.c)
