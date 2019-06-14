@@ -6,6 +6,12 @@
 #define TYPE_PARENT 0
 #define TYPE_CHILD 1
 
+#define construct_child(parent, priority, name, callable )	\
+  __attribute__((constructor(priority)))	\
+  static void init(){                           \
+    registry_add(parent, name, callable, TYPE_CHILD);	\
+  }
+
 struct _Regestry;
 
 typedef struct _Registry Registry;

@@ -12,7 +12,9 @@ add_library(cpma
   strings/remainder.c
   strings/project13-1.c
   strings/project13-2.c
+  strings/project13-3.c
   strings/project13-4.c
   strings/project13-5.c
-  
+  strings/project13-6.c
+
 )
