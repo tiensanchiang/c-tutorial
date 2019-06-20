@@ -19,6 +19,10 @@ add_library(cpma
   large_program/justify.c
   large_program/word.c
   large_program/line.c
+  structures/inventory/inventory.c
+  structures/inventory/readline.c
+  advanced_pointers/inventory.c
+  advanced_pointers/project17-5.c
   )
 
 #add_executable(justify large_program/justify.c large_program/word.c large_program/line.c)
