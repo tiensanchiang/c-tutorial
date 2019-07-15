@@ -25,7 +25,7 @@ static int p5_main(int argc, char* argv[]){
     
     printf("Enter word: ");
     fflush(stdout);
-
+    
     len = read_line(word, WORD_LEN);
 
     if(len == 0){
